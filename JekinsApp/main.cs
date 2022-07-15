@@ -59,6 +59,7 @@ namespace JekinsApp
                         Console.WriteLine("Invalid Choice");
                         break;
                 }
+                if(f)
                 Console.WriteLine("The result of your operation is " + res);
 
             }
