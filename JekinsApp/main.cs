@@ -11,20 +11,30 @@ namespace JekinsApp
             //Console.WriteLine("Welcome to Jenkins");
             //Console.WriteLine("Hello Dhanush");
 
-            Console.WriteLine("Welcome to my Console App 1.0");
-            Console.WriteLine("-------------------------------");
-            Console.WriteLine("Choose the option for operation");
-            Console.WriteLine("1. Add Two integers");
-            Console.WriteLine("2. Multiply Two Integers");
-            Console.WriteLine("3. Exit");
-            Console.WriteLine("--------------------------------");
+            //Console.WriteLine("Welcome to my Console App 1.0");
+            //Console.WriteLine("-------------------------------");
+            //Console.WriteLine("Choose the option for operation");
+            //Console.WriteLine("1. Add Two integers");
+            //Console.WriteLine("2. Multiply Two Integers");
+            //Console.WriteLine("3. Exit");
+            //Console.WriteLine("--------------------------------");
 
-            int choice = Convert.ToInt32(Console.ReadLine());
-            Maths maths = new Maths();
+            //int choice = Convert.ToInt32(Console.ReadLine());
+            //Maths maths = new Maths();
             int res = 0; 
             bool f = true;
             while(f)
             {
+                Console.WriteLine("Welcome to my Console App 1.0");
+                Console.WriteLine("-------------------------------");
+                Console.WriteLine("Choose the option for operation");
+                Console.WriteLine("1. Add Two integers");
+                Console.WriteLine("2. Multiply Two Integers");
+                Console.WriteLine("3. Exit");
+                Console.WriteLine("--------------------------------");
+
+                int choice = Convert.ToInt32(Console.ReadLine());
+                Maths maths = new Maths();
                 switch (choice)
                 {
                     case 1:
@@ -49,10 +59,11 @@ namespace JekinsApp
                         Console.WriteLine("Invalid Choice");
                         break;
                 }
+                Console.WriteLine("The result of your operation is " + res);
 
             }
             
-            Console.WriteLine("The result of your operation is " + res);
+            //Console.WriteLine("The result of your operation is " + res);
             Console.ReadLine();
         }
     }
