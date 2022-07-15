@@ -21,30 +21,37 @@ namespace JekinsApp
 
             int choice = Convert.ToInt32(Console.ReadLine());
             Maths maths = new Maths();
-            int res = 0;
-            switch(choice)
+            int res = 0; 
+            bool f = true;
+            while(f)
             {
-                case 1:
-                    Console.WriteLine("Enter the first number to be added");
-                    int a = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("Enter the second number to be added");
-                    int b = Convert.ToInt32(Console.ReadLine());
-                    res = maths.Add(a, b);
-                    break;
-                case 2:
-                    Console.WriteLine("Enter the first number to be multiplied");
-                    int a1 = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("Enter the second number to be multiplied");
-                    int b1 = Convert.ToInt32(Console.ReadLine());
-                    res = maths.Multiply(a1, b1);
-                    break;
-                case 3:
-                    Console.WriteLine("Exited the App, Thank you :)");
-                    break;
-                default:
-                    Console.WriteLine("Invalid Choice");
-                    break;
+                switch (choice)
+                {
+                    case 1:
+                        Console.WriteLine("Enter the first number to be added");
+                        int a = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter the second number to be added");
+                        int b = Convert.ToInt32(Console.ReadLine());
+                        res = maths.Add(a, b);
+                        break;
+                    case 2:
+                        Console.WriteLine("Enter the first number to be multiplied");
+                        int a1 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter the second number to be multiplied");
+                        int b1 = Convert.ToInt32(Console.ReadLine());
+                        res = maths.Multiply(a1, b1);
+                        break;
+                    case 3:
+                        Console.WriteLine("Exited the App, Thank you :)");
+                        f = false;
+                        break;
+                    default:
+                        Console.WriteLine("Invalid Choice");
+                        break;
+                }
+
             }
+            
             Console.WriteLine("The result of your operation is " + res);
             Console.ReadLine();
         }
